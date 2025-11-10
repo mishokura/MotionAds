@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MotionAds - მოძრავი რეკლამა</title>
+    <link rel="icon" type="image/png" href="motionadslogo.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
@@ -55,6 +56,17 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo span {
             font-size: 1.5rem;
             font-weight: 800;
             background: var(--gradient);
@@ -421,7 +433,10 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <div class="logo">MotionAds</div>
+            <div class="logo">
+                <img src="motionadslogo.png" alt="MotionAds Logo">
+                <span>MotionAds</span>
+            </div>
             <ul>
                 <li><a href="#home">მთავარი</a></li>
                 <li><a href="#features">ფუნქციები</a></li>
@@ -566,16 +581,5 @@
             observer.observe(el);
         });
     </script>
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4340CM6LRX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4340CM6LRX');
-</script>
 </body>
 </html>
